@@ -1,0 +1,17 @@
+
+# Wwproduct menu items definition
+entity.w_w_product.collection:
+  title: 'Wwproduct list'
+  route_name: entity.w_w_product.collection
+  description: 'List Wwproduct entities'
+  parent: system.admin_structure
+  weight: 100
+
+
+# Wwproduct type menu items definition
+entity.w_w_product_type.collection:
+  title: 'Wwproduct type'
+  route_name: entity.w_w_product_type.collection
+  description: 'List Wwproduct type (bundles)'
+  parent: system.admin_structure
+  weight: 99

@@ -1,0 +1,61 @@
+<?php
+
+/**
+ * @file
+ * Contains ww_product.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function ww_product_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ww_product module.
+    case 'help.page.ww_product':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('My awesome product module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ww_product_theme() {
+  $theme = [];
+  $theme['w_w_product'] = [
+    'render element' => 'elements',
+    'file' => 'w_w_product.page.inc',
+    'template' => 'w_w_product',
+  ];
+  $theme['w_w_product_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'w_w_product.page.inc',
+  ];
+  $theme['ww_product'] = [
+    'render element' => 'children',
+  ];
+  return $theme;
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function ww_product_theme_suggestions_w_w_product(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#w_w_product'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'w_w_product__' . $sanitized_view_mode;
+  $suggestions[] = 'w_w_product__' . $entity->bundle();
+  $suggestions[] = 'w_w_product__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'w_w_product__' . $entity->id();
+  $suggestions[] = 'w_w_product__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

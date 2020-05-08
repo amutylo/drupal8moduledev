@@ -1,0 +1,10 @@
+entity.w_w_product.add_form:
+  route_name: entity.w_w_product.add_page
+  title: 'Add Wwproduct'
+  appears_on:
+    - entity.w_w_product.collection
+entity.w_w_product_type.add_form:
+  route_name: entity.w_w_product_type.add_form
+  title: 'Add Wwproduct type'
+  appears_on:
+    - entity.w_w_product_type.collection

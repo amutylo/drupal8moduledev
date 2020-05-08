@@ -1,0 +1,30 @@
+add wwproduct entities:
+  title: 'Create new Wwproduct entities'
+
+administer wwproduct entities:
+  title: 'Administer Wwproduct entities'
+  description: 'Allow to access the administration form to configure Wwproduct entities.'
+  restrict access: true
+
+delete wwproduct entities:
+  title: 'Delete Wwproduct entities'
+
+edit wwproduct entities:
+  title: 'Edit Wwproduct entities'
+
+view published wwproduct entities:
+  title: 'View published Wwproduct entities'
+
+view unpublished wwproduct entities:
+  title: 'View unpublished Wwproduct entities'
+
+view all wwproduct revisions:
+  title: 'View all Wwproduct revisions'
+
+revert all wwproduct revisions:
+  title: 'Revert all Wwproduct revisions'
+  description: 'Role requires permission <em>view Wwproduct revisions</em> and <em>edit rights</em> for wwproduct entities in question or <em>administer wwproduct entities</em>.'
+
+delete all wwproduct revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Wwproduct revisions</em> and <em>delete rights</em> for wwproduct entities in question or <em>administer wwproduct entities</em>.'

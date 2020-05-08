@@ -1,0 +1,13 @@
+{
+    "name": "ww_product",
+    "type": "drupal-module",
+    "description": "My awesome product module",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/ww_product",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/ww_product",
+        "source": "http://cgit.drupalcode.org/ww_product",
+    }
+}

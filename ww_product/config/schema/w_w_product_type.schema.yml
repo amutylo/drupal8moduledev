@@ -1,0 +1,12 @@
+ww_product.w_w_product_type.*:
+  type: config_entity
+  label: 'Wwproduct type config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string

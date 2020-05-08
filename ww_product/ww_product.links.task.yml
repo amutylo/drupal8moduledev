@@ -1,0 +1,22 @@
+# Wwproduct routing definition
+
+entity.w_w_product.canonical:
+  route_name: entity.w_w_product.canonical
+  base_route: entity.w_w_product.canonical
+  title: 'View'
+
+entity.w_w_product.edit_form:
+  route_name: entity.w_w_product.edit_form
+  base_route: entity.w_w_product.canonical
+  title: 'Edit'
+
+entity.w_w_product.version_history:
+  route_name: entity.w_w_product.version_history
+  base_route: entity.w_w_product.canonical
+  title: 'Revisions'
+
+entity.w_w_product.delete_form:
+  route_name:  entity.w_w_product.delete_form
+  base_route:  entity.w_w_product.canonical
+  title: Delete
+  weight: 10

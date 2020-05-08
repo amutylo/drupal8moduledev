@@ -1,0 +1,5 @@
+name: 'WW Product'
+type: module
+description: 'My awesome product module'
+core: 8.x
+package: 'Custom'
